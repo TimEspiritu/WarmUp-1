@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of Numbers</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .box{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input{
+            margin: 5px;
+            padding: 8px;
+            width: 150px;
+        }
+        button{
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #result{
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <h2>Getting Averages!</h2>
+
+
+        <input type="number" id="num1" placeholder="Enter Number 1">
+        <input type="number" id="num2" placeholder="Enter Number 2">
+        <input type="number" id="num3" placeholder="Enter Number 3">
+        <input type="number" id="num4" placeholder="Enter Number 4">
+        <input type="number" id="num5" placeholder="Enter Number 5">
+
+
+        <br>
+        <button onclick="Avg()">Calculate</button>  
+
+
+        <div id="result"></div>
+
+
+</div>
+   
+<script>
+    function Avg(){
+        let n1 = Number (document.getElementById("num1").value);
+        let n2 = Number (document.getElementById("num2").value);
+        let n3 = Number (document.getElementById("num3").value);
+        let n4 = Number (document.getElementById("num4").value);
+        let n5 = Number (document.getElementById("num5").value);
+
+
+
+
+        let Avg = (n1 + n2 + n3 + n4 + n5)/5
+
+
+        document.getElementById("result").innerHTML = "Result: " + Avg
+    }
+</script>
+
+
+</body>
+</html>
